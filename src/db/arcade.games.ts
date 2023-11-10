@@ -27,7 +27,7 @@ export const getGamesById = (_id: string) =>
 
 export const createGame = (values: Record<string, any>) =>
   new ArcadeGamesModel(values).save().then((game) => game.toObject());
-export const deleteUserById = (id: string) =>
+export const deleteGameById = (id: string) =>
   ArcadeGamesModel.findOneAndDelete({ _id: id });
-export const updateUserById = (id: string, values: Record<string, any>) =>
+export const updateGameById = (id: string, values: Record<string, any>) =>
   ArcadeGamesModel.findByIdAndUpdate(id, values);
