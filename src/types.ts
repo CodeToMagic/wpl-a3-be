@@ -8,10 +8,10 @@ type Image = {
   path: string;
 };
 
-export type BowlingGame = {
+export type ArcadeGame = {
   pricing: Pricing;
   image: Image;
-  _id: string;
+  _id?: string;
   name: string;
   description: string;
   type: string;

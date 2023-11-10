@@ -22,7 +22,8 @@ export const ArcadeGamesModel = mongoose.model(
 
 // Arcade Games CRUD opeartion methods
 export const getGames = () => ArcadeGamesModel.find();
-export const getGamesById = (id: string) => ArcadeGamesModel.findById(id);
+export const getGamesById = (_id: string) =>
+  ArcadeGamesModel.findById(new mongoose.Types.ObjectId(_id));
 
 export const createGame = (values: Record<string, any>) =>
   new ArcadeGamesModel(values).save().then((game) => game.toObject());
