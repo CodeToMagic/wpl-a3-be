@@ -1,4 +1,4 @@
-This is a repository for a REST API tutorial using Node, Express, Typescript & MongoDB.
+This is a repository for a REST API tutorial using Node, Express, Typescript & MongoDB (Part of my wpl assignment 3)
 
 
 Features:
@@ -17,7 +17,7 @@ Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/ts-node-mongo-rest-api-tutorial.git
+git clone https://github.com/CodeToMagic/wpl-a3-be.git
 ```
 
 ### Install packages
