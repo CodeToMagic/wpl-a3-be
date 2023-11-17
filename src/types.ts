@@ -17,3 +17,9 @@ export type ArcadeGame = {
   type: string;
   minimumAge: number;
 };
+
+export type UserType = {
+  _id?: string;
+  username: string;
+  password: string;
+};
