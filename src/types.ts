@@ -20,6 +20,8 @@ export type ArcadeGame = {
 
 export type UserType = {
   _id?: string;
+  fname: string;
+  lname: string;
   username: string;
   password: string;
 };

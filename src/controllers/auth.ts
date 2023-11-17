@@ -7,8 +7,8 @@ export const registerUser = async (
   res: express.Response
 ) => {
   try {
-    const { password, username } = req.body;
-    if (!password || !username) {
+    const { password, username, fname, lname } = req.body;
+    if (!password || !username || !fname || !lname) {
       return res.status(400).json({ error: "Invalid request" }).end();
     }
     const existingUser = await getUserByUsername(username);
@@ -20,6 +20,8 @@ export const registerUser = async (
     const newUser = await createUser({
       username: username,
       password: hashedPassword,
+      fname: fname,
+      lname: lname,
     });
     return res
       .status(200)
