@@ -24,4 +24,6 @@ export type UserType = {
   lname: string;
   username: string;
   password: string;
+  phoneNumber: string;
+  address: string;
 };

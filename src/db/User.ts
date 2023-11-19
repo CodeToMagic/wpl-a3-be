@@ -7,6 +7,8 @@ export const User = mongoose.model(
     lname: String,
     username: String,
     password: String,
+    phoneNumber: String,
+    address: String,
   })
 );
 
